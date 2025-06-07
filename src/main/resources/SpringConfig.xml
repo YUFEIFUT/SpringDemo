@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 UserDaoImpl2 为 Bean -->
+    <bean id="userDao2" class="com.example.mixedconfigdemo.dao.UserDaoImpl2"/>
+
+    <!-- 可选：手动注册 UserService（与 Java 配置类中的 @Bean 功能重复） -->
+    <!-- <bean id="userService" class="com.example.mixedconfigdemo.service.UserService">
+        <constructor-arg ref="userDao2"/>
+    </bean> -->
+
+</beans>
