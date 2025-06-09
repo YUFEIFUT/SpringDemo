@@ -9,6 +9,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.List;
 
+/*
+官方解释：如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。
+
+如果A、B两个方法都加了@Transactional注解，默认是REQUIRED传播行为。那么如果A方法调用B方法，它们会共用一个事务，因为默认会使用同一条连接，相当于一个事务里执行。
+ */
 public class Application {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(TransactionConfig.class);
