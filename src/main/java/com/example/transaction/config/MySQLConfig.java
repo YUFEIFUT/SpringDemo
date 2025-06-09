@@ -59,6 +59,8 @@ public class MySQLConfig {
         // For MySQL, it might be safer to disable this in production if schema is managed externally
         // For demo purposes, we enable it.
         initializer.setEnabled(true);
+        // 原来是没有设置这一行啊，真是，jules还是有点问题啊，不过很不错了
+        initializer.setDatabasePopulator(populator);
         System.out.println("Attempting to initialize MySQL database with schema-mysql.sql. Ensure the database specified in mysql.properties exists.");
         return initializer;
     }
