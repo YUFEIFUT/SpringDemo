@@ -49,6 +49,12 @@
             <artifactId>HikariCP</artifactId>
             <version>3.4.5</version> <!-- 这是一个与Spring 5.2.x 兼容的常用版本 -->
         </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.28</version>
+        </dependency>
     </dependencies>
 
 </project>
