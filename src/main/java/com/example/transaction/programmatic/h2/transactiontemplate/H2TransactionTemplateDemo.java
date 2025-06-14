@@ -1,7 +1,7 @@
 package com.example.transaction.programmatic.h2.transactiontemplate;
 
-import com.example.transaction.common.model.Account;
-import com.example.transaction.common.service.AccountService;
+import com.example.transaction.programmatic.common.model.Account;
+import com.example.transaction.programmatic.common.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -86,7 +86,7 @@ public class H2TransactionTemplateDemo {
     }
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(com.example.transaction.config.H2Config.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(com.example.transaction.programmatic.config.H2Config.class);
         H2TransactionTemplateDemo demo = context.getBean("h2TransactionTemplateDemo", H2TransactionTemplateDemo.class);
         AccountService accountService = context.getBean(AccountService.class);
 

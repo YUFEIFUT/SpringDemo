@@ -1,6 +1,6 @@
-package com.example.transaction.common.dao;
+package com.example.transaction.programmatic.common.dao;
 
-import com.example.transaction.common.model.Account;
+import com.example.transaction.programmatic.common.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;

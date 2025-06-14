@@ -1,6 +1,6 @@
-package com.example.transaction.common.service;
+package com.example.transaction.programmatic.common.service;
 
-import com.example.transaction.common.model.Account;
+import com.example.transaction.programmatic.common.model.Account;
 
 public interface AccountService {
     Account createAccount(String name, double initialBalance); // For H2 where ID is set by code

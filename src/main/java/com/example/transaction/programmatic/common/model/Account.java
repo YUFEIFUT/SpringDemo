@@ -1,4 +1,4 @@
-package com.example.transaction.common.model;
+package com.example.transaction.programmatic.common.model;
 
 public class Account {
     private int id;

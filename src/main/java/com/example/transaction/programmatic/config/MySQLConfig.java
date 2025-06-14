@@ -1,4 +1,4 @@
-package com.example.transaction.config;
+package com.example.transaction.programmatic.config;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,8 +18,8 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.example.transaction.common.dao",
-        "com.example.transaction.common.service",
+        "com.example.transaction.programmatic.common.dao",
+        "com.example.transaction.programmatic.common.service",
         "com.example.transaction.programmatic.mysql" // Scan MySQL specific demo packages
 })
 @PropertySource("classpath:mysql.properties")
