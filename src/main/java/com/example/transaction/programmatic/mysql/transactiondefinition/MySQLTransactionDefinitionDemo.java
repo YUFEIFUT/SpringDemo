@@ -1,7 +1,7 @@
 package com.example.transaction.programmatic.mysql.transactiondefinition;
 
-import com.example.transaction.common.model.Account;
-import com.example.transaction.common.service.AccountService;
+import com.example.transaction.programmatic.common.model.Account;
+import com.example.transaction.programmatic.common.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -71,7 +71,7 @@ public class MySQLTransactionDefinitionDemo {
 
     public static void main(String[] args) {
         System.out.println("== Ensure MySQL server is running and mysql.properties is configured correctly. ==");
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(com.example.transaction.config.MySQLConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(com.example.transaction.programmatic.config.MySQLConfig.class);
         MySQLTransactionDefinitionDemo demo = context.getBean("mysqlTransactionDefinitionDemo", MySQLTransactionDefinitionDemo.class);
         AccountService accountService = context.getBean(AccountService.class);
 

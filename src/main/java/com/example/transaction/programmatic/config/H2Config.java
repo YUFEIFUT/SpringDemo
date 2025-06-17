@@ -1,6 +1,5 @@
-package com.example.transaction.config;
+package com.example.transaction.programmatic.config;
 
-import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,18 +7,15 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
-import org.springframework.jdbc.datasource.init.DataSourceInitializer;
-import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
-import org.springframework.core.io.ClassPathResource;
 
 import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "com.example.transaction.common.dao",
-        "com.example.transaction.common.service",
+        "com.example.transaction.programmatic.common.dao",
+        "com.example.transaction.programmatic.common.service",
         "com.example.transaction.programmatic.h2" // Scan H2 specific demo packages
 })
 public class H2Config {

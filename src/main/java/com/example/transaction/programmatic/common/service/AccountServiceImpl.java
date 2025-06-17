@@ -1,7 +1,7 @@
-package com.example.transaction.common.service;
+package com.example.transaction.programmatic.common.service;
 
-import com.example.transaction.common.dao.AccountDao;
-import com.example.transaction.common.model.Account;
+import com.example.transaction.programmatic.common.dao.AccountDao;
+import com.example.transaction.programmatic.common.model.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
