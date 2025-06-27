@@ -31,7 +31,7 @@ public class ImportDemo {
         System.out.println("获取到OrderService Bean: " + orderService);
         orderService.processOrder();
         
-        // 通过Bean名称获取（我实际运行，默认名称似乎是全限定类名）
+        // 通过Bean名称获取（我实际运行，默认名称是全限定类名）
         UserService userServiceByName = (UserService) context.getBean("com.example.ioc.import_bean.UserService");
         OrderService orderServiceByName = (OrderService) context.getBean("com.example.ioc.import_bean.OrderService");
         
