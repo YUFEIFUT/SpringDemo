@@ -1,4 +1,4 @@
-package com.example.ioc.strategy;
+package com.example.ioc.design_pattern.strategy;
 
 import org.springframework.beans.factory.InitializingBean;
 
