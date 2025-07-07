@@ -19,6 +19,10 @@ import org.springframework.context.annotation.Configuration;
  * 注意事项：
  * - 动态注册的Bean与普通@Component/@Bean注解注册的Bean等价。
  * - 本例中注册的Bean名为dynamicBean。
+ * <p>
+ * 执行时机说明：
+ * - BeanDefinitionRegistryPostProcessor 会在 Spring 容器刷新（refresh）过程中，所有的 bean 定义加载完成后、所有的 bean 实例化之前被执行。
+ * - 具体来说，先于普通的 BeanFactoryPostProcessor 执行，属于 Spring 容器启动早期阶段。
  */
 @Configuration
 public class DynamicBeanRegistryPostProcessor implements BeanDefinitionRegistryPostProcessor {
